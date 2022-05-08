@@ -1,5 +1,5 @@
+import styles from "./DetailCard.module.css";
 const DetailCard = ({ detailData }) => {
-  console.log(detailData);
   return (
     <div>
       <p>{detailData.name}</p>
@@ -11,6 +11,7 @@ const DetailCard = ({ detailData }) => {
       <p>{detailData.county_province}</p>
       <p>{detailData.city}</p>
       <a href={`tel:${detailData.phone}`}>{detailData.phone}</a>
+      <br />
       <a href={detailData.website_url}>{detailData.website_url}</a>
       <p>{detailData.name}</p>
     </div>
