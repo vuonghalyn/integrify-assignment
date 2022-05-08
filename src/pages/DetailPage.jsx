@@ -12,7 +12,11 @@ const DetailPage = () => {
       });
     });
   }, [id]);
-  return <DetailCard detailData={detailData} />;
+  return (
+    <div className="content-wrapper">
+      <DetailCard detailData={detailData} />
+    </div>
+  );
 };
 
 export default DetailPage;
