@@ -6,8 +6,11 @@ const DetailCard = ({ detailData }) => {
     <div className={styles.container}>
       <div>
         <p>{detailData.name}</p>
-        <p>{detailData.brewery_type}</p>
-        <p>{detailData.street}</p>
+        <p>
+          <b>Brewery type: </b>
+          {detailData.brewery_type}
+        </p>
+        <p>Street: {detailData.street}</p>
         <p>{detailData.address_2}</p>
         <p>{detailData.address_3}</p>
         <p>{detailData.city}</p>
@@ -17,11 +20,18 @@ const DetailCard = ({ detailData }) => {
         <p>{detailData.country}</p>
         <p>{detailData.longitude}</p>
         <p>{detailData.latitude}</p>
-        <a href={`tel:${detailData.phone}`}>{detailData.phone}</a>
-        <br />
-        <a href={detailData.website_url}>{detailData.website_url}</a>
-        <p>{detailData.updated_at}</p>
-        <p>{detailData.created_at}</p>
+        <p>
+          <a className={styles.link} href={`tel:${detailData.phone}`}>
+            {detailData.phone}
+          </a>
+        </p>
+        <p>
+          <a className={styles.link} href={detailData.website_url}>
+            {detailData.website_url}
+          </a>
+        </p>
+        <p>{new Date(detailData.updated_at).toLocaleString("en-us")}</p>
+        <p>{new Date(detailData.created_at).toLocaleString("en-us")}</p>
       </div>
       {/* Create go back button to link back to Homepage */}
       <Link className={styles.button} to={`/`}>

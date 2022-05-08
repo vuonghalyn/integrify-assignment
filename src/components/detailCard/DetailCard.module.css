@@ -6,6 +6,7 @@
   border-radius: 6px;
   overflow: hidden;
   justify-content: center;
+  width: 500px;
 }
 
 .container p:first-child {
@@ -36,4 +37,17 @@
 .container .button:hover {
   background-color: rgba(0, 0, 0, 0.7);
   border: none;
+}
+
+.link {
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    max-width: 300px;
+  }
 }
