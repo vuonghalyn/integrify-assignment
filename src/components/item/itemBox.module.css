@@ -6,6 +6,7 @@
   border-radius: 6px;
   overflow: hidden;
   max-width: 180px;
+  min-height: 300px;
 }
 
 .container div {
@@ -45,4 +46,10 @@
 .container .button:hover {
   background-color: rgba(0, 0, 0, 0.7);
   border: none;
+}
+
+@media only screen and (max-width: 449px) {
+  .container {
+    margin: auto;
+  }
 }
