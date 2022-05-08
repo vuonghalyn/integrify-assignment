@@ -5,4 +5,13 @@
   flex-direction: column;
   border-radius: 6px;
   overflow: hidden;
+  justify-content: center;
+}
+
+.container p:first-child {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
 }

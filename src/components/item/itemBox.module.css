@@ -24,12 +24,6 @@
   margin-bottom: 20px;
 }
 
-.container p:first-child {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
 .container .button {
   color: white;
   background-color: black;

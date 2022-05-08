@@ -8,9 +8,10 @@ const DetailCard = ({ detailData }) => {
       <p>{detailData.street}</p>
       <p>{detailData.address_2}</p>
       <p>{detailData.address_3}</p>
+      <p>{detailData.city}</p>
       <p>{detailData.state}</p>
       <p>{detailData.county_province}</p>
-      <p>{detailData.city}</p>
+      <p>{detailData.postal_code}</p>
       <a href={`tel:${detailData.phone}`}>{detailData.phone}</a>
       <br />
       <a href={detailData.website_url}>{detailData.website_url}</a>
