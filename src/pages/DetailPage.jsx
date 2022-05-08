@@ -11,7 +11,7 @@ const DetailPage = () => {
         setDetailData(parsedData);
       });
     });
-  }, []);
+  }, [id]);
   return <DetailCard detailData={detailData} />;
 };
 
