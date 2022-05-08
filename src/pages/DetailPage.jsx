@@ -13,7 +13,7 @@ const DetailPage = () => {
     });
   }, [id]);
   return (
-    <div className="content-wrapper">
+    <div className="content-wrapper detail-page">
       <DetailCard detailData={detailData} />
     </div>
   );

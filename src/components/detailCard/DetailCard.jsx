@@ -1,7 +1,7 @@
 import styles from "./DetailCard.module.css";
 const DetailCard = ({ detailData }) => {
   return (
-    <div>
+    <div className={styles.container}>
       <p>{detailData.name}</p>
       <p>{detailData.brewery_type}</p>
       <p>{detailData.street}</p>

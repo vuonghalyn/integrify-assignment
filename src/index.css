@@ -19,3 +19,9 @@ code {
   margin: 0 auto;
   padding: 0 24px;
 }
+
+.detail-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
