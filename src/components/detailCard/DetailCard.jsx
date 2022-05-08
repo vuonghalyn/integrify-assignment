@@ -1,4 +1,5 @@
 import styles from "./DetailCard.module.css";
+// get detail data from props
 const DetailCard = ({ detailData }) => {
   return (
     <div className={styles.container}>
