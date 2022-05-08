@@ -6,8 +6,8 @@ const SearchBar = ({ setData }) => {
   const handleSearch = async (event) => {
     // using prevent default to prevent native HTML to refresh page
     event.preventDefault();
-    // get keyword input from form
-    const keyword = event.target.keyword.value;
+    // get keyword input from form and normalize keyword to lower case
+    const keyword = event.target.keyword.value.toLowerCase();
     // declair variable to store all breweries data
     let originalData = [];
     // fetch brewery data, must use await to wait for promise to resolve
