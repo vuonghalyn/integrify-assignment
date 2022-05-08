@@ -15,3 +15,25 @@
   letter-spacing: 0.02em;
   margin-bottom: 20px;
 }
+
+.container .button {
+  color: white;
+  background-color: black;
+  min-width: 100%;
+  margin-top: auto;
+  border-radius: 0;
+  border: none;
+}
+
+.button {
+  height: 30px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+}
