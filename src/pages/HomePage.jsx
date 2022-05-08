@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ItemBox from "../components/item/ItemBox";
 import SearchBar from "../components/searchBar/SearchBar";
+import styles from "./HomePage.module.css";
 
 // Functional component HomePage
 const HomePage = () => {
@@ -23,13 +24,7 @@ const HomePage = () => {
       {/* render SearchBar pass data and set state as prop to SearchBar */}
       {/* SearchBar use data for searching from keyword, set State is to display the search result  */}
       <SearchBar data={data} setData={setData} />
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr 1fr",
-          gridGap: "20px",
-        }}
-      >
+      <div className={styles.cardContainer}>
         {/* loop through api result and render each item box */}
         {/* we need index (unique) as key prop to help ReAct differentiate each item box */}
         {data.map((item, index) => {
